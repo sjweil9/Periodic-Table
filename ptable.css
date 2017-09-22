@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+    width: 965px;
+    height: 520px;
+    padding: 10px;
+    background-color: rgb(240,240,240);
+    text-align: center;
+}
+.column{
+    width: 45px;
+    height: 498px;
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: top;
+}
+.cell{
+    height: 48px;
+    margin-bottom: 2px;
+}
+.cell:first-child{
+    background-color: rgb(240,240,240);
+    color: red;
+    font-size: 10px;
+}
+.column.first .cell{
+    background-color: rgb(240,240,240);
+    color: red;
+    font-size: 10px;
+    vertical-align: middle;
+    line-height: 48px;
+    vertical-align: middle;
+}
+#group{
+    line-height: 10px;
+    vertical-align: middle;
+}
+.cell.blue, .cell.green, .cell.yellow, .cell.red{
+    border: 1px solid gray;
+    height: 46px; 
+}
+.cell.blue{
+    background-color: rgb(85,160,250);
+}
+.cell.yellow{
+    background-color: rgb(255,200,60);     
+}
+.cell.red{
+    background-color: rgb(255,150,150);       
+}
+.cell.green{
+    background-color: rgb(0,200,65);
+}
+.cell.bottom{
+    margin-bottom: 15px;
+}
+#third{
+    margin-right: 10px;
+}
+#onestar{
+    position: relative;
+}
+#onestar::before{
+    content: "*";
+    color: red;
+    position: relative;
+    right: 27px;
+    top: 10px;
+    font-size: 12px;
+}
+#twostar{
+    position: relative;
+}
+#twostar::before{
+    content: "**";
+    color: red;
+    position: relative;
+    right: 32px;
+    top: 10px;
+    font-size: 12px;    
+}
+.cell.lanthact{
+    overflow-x: visible;
+    color: red;
+    font-size: 12px;
+    line-height: 40px;
+}
+p.num{
+    font-size: 10px;
+}
+p.letter{
+    font-size: 16px;
+    color: rgb(0,0,156);
+    font-weight: bold;
+}
